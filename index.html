@@ -1,102 +1,153 @@
-
-<!DOCTYPE html>
+html_content = """<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Maalolan's Portfolio</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    body {
-      background-color: #0f0f0f;
-      color: #f5f5f5;
-      line-height: 1.6;
-    }
-    header {
-      background: #111;
-      padding: 2rem;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 2.5rem;
-      color: #ffdd01;
-    }
-    header p {
-      font-size: 1.1rem;
-      color: #bbb;
-    }
-    section {
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-    }
-    .project {
-      margin-bottom: 2rem;
-      background: #1a1a1a;
-      padding: 1rem;
-      border-left: 4px solid #ffdd01;
-    }
-    .project h3 {
-      margin-bottom: 0.5rem;
-      color: #ffdd01;
-    }
-    .project p {
-      color: #ddd;
-    }
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background: #111;
-      font-size: 0.9rem;
-      color: #666;
-    }
-    a {
-      color: #ffdd01;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Computer Networks Exam Notes</title>
+    <style>
+        body {
+            background-color: #0b0c10;
+            color: #cce6ff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(90deg, #001f3f, #004080);
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 2px 10px #000;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+        }
+        .part {
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #141824;
+            border-radius: 12px;
+            box-shadow: 0 0 15px #004080;
+            transition: transform 0.2s ease-in-out;
+        }
+        .part:hover {
+            transform: scale(1.02);
+        }
+        h2 {
+            color: #4da6ff;
+            border-bottom: 2px solid #4da6ff;
+            padding-bottom: 5px;
+        }
+        h3 {
+            color: #66b3ff;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 15px;
+        }
+        ul li::before {
+            content: "✔ ";
+            color: #4da6ff;
+        }
+        ul li {
+            margin: 6px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            background: #001f3f;
+            color: #fff;
+        }
+        footer a {
+            color: #66b3ff;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Maalolan G M</h1>
-    <p>CS Student • Learning Web Dev • Python & Linux Enthusiast</p>
-  </header>
+    <header>
+        <h1>Computer Networks Exam Notes</h1>
+    </header>
+    <div class="container">
+        <div class="part">
+            <h2>PART B</h2>
+            <h3>Unit 1</h3>
+            <ul>
+                <li>OSI Layer</li>
+                <li>Topology</li>
+                <li>Types of Networks: LAN, WAN, MAN (Characteristics)</li>
+                <li>Transmission Media: Physical Link (Guided & Unguided)</li>
+            </ul>
+            <h3>Unit 2</h3>
+            <ul>
+                <li>Stop and Wait ARQ & Simple ARQ</li>
+                <li>Sliding Window Protocol: Go Back N, Selective Repeat ARQ</li>
+                <li>CRC (Polynomial Problems)</li>
+                <li>Checksum, Forward Error Correction, Flow Control</li>
+                <li>Bluetooth, Wireless LAN → IEEE 802.11</li>
+            </ul>
+            <h3>Unit 3</h3>
+            <ul>
+                <li>IPv4 and IPv6 Header Versions</li>
+                <li>Link State Routing</li>
+                <li>Congestion Control Mechanism</li>
+                <li>Unicast, Multicast, Broadcast</li>
+            </ul>
+        </div>
 
-  <section>
-    <h2>About Me</h2>
-    <p>I’m a Computer Science student exploring programming, automation, and web development. I enjoy working on small personal tools, experimenting in Linux, and learning new tech at my own pace.</p>
-  </section>
+        <div class="part">
+            <h2>PART C</h2>
+            <p>From <b>Unit 1</b> and <b>Unit 2</b> only.</p>
+        </div>
 
-  <section>
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Cartoleria</h3>
-      <p>A Studio Ghibli-themed Xerox request website using HTML & CSS. Custom layout toggle, form handling, and styling.</p>
+        <div class="part">
+            <h2>PART A</h2>
+            <ul>
+                <li>Features of IPv6</li>
+                <li>IEEE 802 Standards</li>
+                <li>RTT (Round Trip Time)</li>
+                <li>Piggybacking</li>
+                <li>Bit Stuffing Problem</li>
+                <li>Services by Data Link Layer</li>
+                <li>Port Logical & Physical Address</li>
+                <li>Routing Protocol Metrics</li>
+                <li>What is Framing</li>
+                <li>Advantages of Multipoint Connection over Point-to-Point</li>
+                <li>Define IEEE 802.11</li>
+                <li>Difference between Router and Bridge</li>
+                <li>Components of Data Communication</li>
+                <li>Multicasting and its Applications</li>
+                <li>Transmission Media Types</li>
+                <li>Cable Suitable for Long Distance Communication</li>
+                <li>Reason for Collisions in Random Access Protocol</li>
+                <li>CRC (Cyclic Redundancy Check)</li>
+                <li>Ethernet Frame Format</li>
+                <li>How many cables and ports are required to connect 4 devices in Mesh Topology</li>
+                <li>Difference between Fast Ethernet and Gigabit Ethernet</li>
+                <li>Number of Duplex Mode Links in Mesh Topology</li>
+                <li>Metrics of Performance for Computer Networks</li>
+                <li>Problems on IP Addressing (Class A, B, C)</li>
+            </ul>
+        </div>
     </div>
-    <div class="project">
-      <h3>MoodMeal</h3>
-      <p>A CLI tool built in Python that recommends meals based on user emotion input.</p>
-    </div>
-    <div class="project">
-      <h3>Linux Tools Exploration</h3>
-      <p>Used Kali & Parrot OS to explore automation, ethical hacking simulations, and system tools for learning purposes.</p>
-    </div>
-  </section>
-
-  <section>
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:gmmaalolan@gmail.com">gmmaalolan@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/maal0lan" target="_blank">github.com/maal0lan</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/maalolangm" target="_blank">linkedin.com/in/maalolangm</a></p>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Maalolan G M. All rights reserved.</p>
-  </footer>
+    <footer>
+        <p>Made with ❤️ for CN Exam | Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+    </footer>
 </body>
-</html>
+</html>"""
+
+with open("/mnt/data/computer_networks_notes.html", "w") as f:
+    f.write(html_content)
+
+"/mnt/data/computer_networks_notes.html"
