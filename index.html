@@ -1,150 +1,101 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Computer Networks Exam Notes</title>
-    <style>
-        body {
-            background-color: #0b0c10;
-            color: #cce6ff;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(90deg, #001f3f, #004080);
-            color: #ffffff;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0px 2px 10px #000;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-        }
-        .container {
-            width: 90%;
-            max-width: 1000px;
-            margin: 20px auto;
-        }
-        .part {
-            margin-bottom: 40px;
-            padding: 20px;
-            background-color: #141824;
-            border-radius: 12px;
-            box-shadow: 0 0 15px #004080;
-            transition: transform 0.2s ease-in-out;
-        }
-        .part:hover {
-            transform: scale(1.02);
-        }
-        h2 {
-            color: #4da6ff;
-            border-bottom: 2px solid #4da6ff;
-            padding-bottom: 5px;
-        }
-        h3 {
-            color: #66b3ff;
-        }
-        ul {
-            list-style-type: none;
-            padding-left: 15px;
-        }
-        ul li::before {
-            content: "✔ ";
-            color: #4da6ff;
-        }
-        ul li {
-            margin: 6px 0;
-        }
-        footer {
-            text-align: center;
-            padding: 15px;
-            margin-top: 20px;
-            background: #001f3f;
-            color: #fff;
-        }
-        footer a {
-            color: #66b3ff;
-            text-decoration: none;
-        }
-        footer a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exam Dashboard | Maal0lan</title>
+  <style>
+    body {
+      background-color: #0b0c10;
+      color: #cce6ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: linear-gradient(90deg, #001f3f, #004080);
+      color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0px 2px 10px #000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1200px;
+      margin: 30px auto;
+    }
+    .card {
+      background-color: #141824;
+      border-radius: 12px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 0 15px #004080;
+      transition: transform 0.2s ease-in-out, background 0.3s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      background: #1c2433;
+    }
+    .card h2 {
+      margin: 0;
+      color: #4da6ff;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      margin-top: 20px;
+      background: #001f3f;
+      color: #fff;
+    }
+    footer a {
+      color: #66b3ff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Computer Networks Exam Notes</h1>
-    </header>
-    <div class="container">
-        <div class="part">
-            <h2>PART B</h2>
-            <h3>Unit 1</h3>
-            <ul>
-                <li>OSI Layer</li>
-                <li>Topology</li>
-                <li>Types of Networks: LAN, WAN, MAN (Characteristics)</li>
-                <li>Transmission Media: Physical Link (Guided & Unguided)</li>
-            </ul>
-            <h3>Unit 2</h3>
-            <ul>
-                <li>Stop and Wait ARQ & Simple ARQ</li>
-                <li>Sliding Window Protocol: Go Back N, Selective Repeat ARQ</li>
-                <li>CRC (Polynomial Problems)</li>
-                <li>Checksum, Forward Error Correction, Flow Control</li>
-                <li>Bluetooth, Wireless LAN → IEEE 802.11</li>
-            </ul>
-            <h3>Unit 3</h3>
-            <ul>
-                <li>IPv4 and IPv6 Header Versions</li>
-                <li>Link State Routing</li>
-                <li>Congestion Control Mechanism</li>
-                <li>Unicast, Multicast, Broadcast</li>
-            </ul>
-        </div>
+  <header>
+    <h1>📘 Exam Dashboard</h1>
+    <p>Select a subject to view notes & resources</p>
+  </header>
 
-        <div class="part">
-            <h2>PART C</h2>
-            <p>From <b>Unit 1</b> and <b>Unit 2</b> only.</p>
-        </div>
-
-        <div class="part">
-            <h2>PART A</h2>
-            <ul>
-                <li>Features of IPv6</li>
-                <li>IEEE 802 Standards</li>
-                <li>RTT (Round Trip Time)</li>
-                <li>Piggybacking</li>
-                <li>Bit Stuffing Problem</li>
-                <li>Services by Data Link Layer</li>
-                <li>Port Logical & Physical Address</li>
-                <li>Routing Protocol Metrics</li>
-                <li>What is Framing</li>
-                <li>Advantages of Multipoint Connection over Point-to-Point</li>
-                <li>Define IEEE 802.11</li>
-                <li>Difference between Router and Bridge</li>
-                <li>Components of Data Communication</li>
-                <li>Multicasting and its Applications</li>
-                <li>Transmission Media Types</li>
-                <li>Cable Suitable for Long Distance Communication</li>
-                <li>Reason for Collisions in Random Access Protocol</li>
-                <li>CRC (Cyclic Redundancy Check)</li>
-                <li>Ethernet Frame Format</li>
-                <li>How many cables and ports are required to connect 4 devices in Mesh Topology</li>
-                <li>Difference between Fast Ethernet and Gigabit Ethernet</li>
-                <li>Number of Duplex Mode Links in Mesh Topology</li>
-                <li>Metrics of Performance for Computer Networks</li>
-                <li>Problems on IP Addressing (Class A, B, C)</li>
-            </ul>
-        </div>
+  <div class="container">
+    <div class="card" onclick="location.href='subjects/computer_networks.html'">
+      <h2>Computer Networks</h2>
     </div>
-    <footer>
-        <p>Made with ❤️ for CN Exam | Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
-    </footer>
+    <div class="card" onclick="location.href='subjects/algebra_number_theory.html'">
+      <h2>Algebra & Number Theory</h2>
+    </div>
+    <div class="card" onclick="location.href='subjects/operating_system.html'">
+      <h2>Operating System</h2>
+    </div>
+    <div class="card" onclick="location.href='subjects/iot.html'">
+      <h2>Internet of Things</h2>
+    </div>
+    <div class="card" onclick="location.href='subjects/theory_of_computation.html'">
+      <h2>Theory of Computation</h2>
+    </div>
+    <div class="card" onclick="location.href='subjects/embedded_system.html'">
+      <h2>Embedded System</h2>
+    </div>
+    <div class="card" onclick="location.href='subjects/others.html'">
+      <h2>Other Subjects</h2>
+    </div>
+  </div>
+
+  <footer>
+    <p>Made with ❤️ by Maal0lan | Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a></p>
+  </footer>
 </body>
 </html>
-
-
