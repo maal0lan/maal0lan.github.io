@@ -1,0 +1,85 @@
+body {
+      background-color: #0b0c10;
+      color: #cce6ff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height : 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    header {
+      background: linear-gradient(90deg, #001f3f, #004080);
+      color: #ffffff;
+      padding: 1rem;
+      text-align: center;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      margin-bottom: 1rem;
+    }
+    header h1 {
+      font-size: 2.8rem;
+      margin: 0;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+      color: #e6e6e6;
+      font-weight: 300;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      width: 90%;
+      max-width: 1200px;
+      margin: 30px auto;
+      flex:1;
+    }
+    .card {
+      background-color: #141824;
+      border-radius: 12px;
+      padding: 1rem;
+      text-align: center;
+      box-shadow: 0 0 15px #004080;
+      transition: transform 0.2s ease-in-out; background :0.3s;
+      cursor: pointer;
+    }
+    .card:hover {
+      transform: scale(1.05);
+      background: #1c2433;
+    }
+    .card h2 {
+      margin: 0;
+      color: #4da6ff;
+    }
+    footer {
+      position: relative;
+    
+      align-items: center;
+      text-align: center;
+      padding: 15px;
+      margin-top: auto;
+      background: #001f3f;
+      color: #fff;
+    }
+    footer a {
+      color: #66b3ff;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+    /* Add animation for the emoji */
+.emoji-book {
+  display: inline-block;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0px); }
+}
