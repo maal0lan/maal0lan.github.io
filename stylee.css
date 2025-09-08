@@ -1,0 +1,138 @@
+
+body {
+      background: #0d0d0d;
+      color: #ffdd01;
+      font-family: monospace;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-size: 3rem;
+    }
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: transparent; 
+  padding: 15px 0;
+}
+
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 150px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  transition: color 0.1s, transform 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffdd01; 
+}
+
+h1, h2 {
+  margin-top: 100px;
+}
+.scramble {
+        letter-spacing: 19px;
+}
+
+
+
+
+
+.center-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+.main-name {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+      font-size: 3.5rem;
+      color: #ffdd01;
+      letter-spacing: 19px;
+      text-align: center;
+    }
+.corner-word {
+      position: absolute;
+      font-size: 1.3rem;
+      color: #fff;
+      background: rgba(24,24,24,0.85);
+      padding: 12px 28px;
+      border-radius: 12px;
+      font-weight: bold;
+      opacity: 0;
+      animation: fadeInMove 1.2s cubic-bezier(.4,1.7,.6,.95) forwards;
+    }
+.designer {
+      top: 12%;
+      left: 18%;
+      animation-delay: 0.3s;
+    }
+.ai-engineer {
+      top: 12%;
+      right: 18%;
+      animation-delay: 0.6s;
+    }
+.linux-tools {
+      bottom: 14%;
+      left: 50%;
+      transform: translateX(-50%);
+      animation-delay: 0.9s;
+    }
+@keyframes fadeInMove {
+      0% {
+        opacity: 0;
+        transform: scale(0.7) translateY(40px);
+      }
+      60% {
+        opacity: 1;
+        transform: scale(1.05) translateY(-8px);
+      }
+      100% {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+      }
+    }
+@media (max-width: 700px) {
+      .corner-word {
+        font-size: 1rem;
+        padding: 8px 14px;
+      }
+      .designer, .ai-engineer {
+        top: 7%;
+        left: 8%;
+        right: 8%;
+      }
+      .linux-tools {
+        bottom: 7%;
+      }
+      .main-name {
+        font-size: 2rem;
+        letter-spacing: 7px;
+      }
+    }
+
+
+
+
+
+
+
+
