@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="script.js">
+</head>
+<body class="dark">
+
+  <header>
+    <h1>Todo List</h1>
+    <button id="theme-toggle">🌙</button>
+  </header>
+  <main>
+    <div class="task-input">
+      <input type="text" id="task-text" placeholder="Enter task...">
+      <input type="date" id="task-date">
+      <input type="time" id="task-time">
+      <select id="task-priority" >
+        <option value="low">3</option>
+        <option value="medium">2</option>
+        <option value="high">1</option>
+      </select>
+      <button id="add-task">Add</button>
+    </div>
+    <div style="display: flex; justify-content: flex-end; margin: 0 1rem 1rem 0;">
+      <label for="sort-tasks" style="margin-right: 0.5rem;">Sort by:</label>
+      <select id="sort-tasks">
+        <option value="none">None</option>
+        <option value="priority">Priority</option>
+        <option value="date">Date</option>
+        <option value="time">Time</option>
+      </select>
+    </div>
+    <ul id="task-list"></ul>
+  </main>
+
+  <!-- Popup for task details, notes, and links -->
+  <div id="task-popup" class="hidden">
+    <div class="popup-content">
+      <h2 id="popup-title"></h2>
+      <div id="popup-date"></div>
+      <div id="popup-time"></div>
+      <label for="popup-notes">Notes/Links:</label>
+      <textarea id="popup-notes" rows="10" column="30"  placeholder="Add notes or paste links here..."></textarea>
+      <div style="margin-top: 1rem; display: flex; justify-content: flex-end; gap: 0.5rem;">
+        <button id="save-notes">Save</button>
+        <button id="close-popup">Close</button>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="script.js"></script>
+</body>
+</html>

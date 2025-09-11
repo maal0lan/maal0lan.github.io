@@ -91,7 +91,7 @@ h1, h2 {
   background: #181818;
   border-radius: 14px;
   padding: 30px;
-  transition: transform 0.2s, box-shadow 0.2s;
+  transition: transform 0.1s, box-shadow 0.3s;
 }
 .project-card:hover {
   transform: translateY(-6px) scale(1.02);
