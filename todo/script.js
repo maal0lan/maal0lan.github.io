@@ -66,7 +66,7 @@ addBtn.onclick = () => {
   const priority = document.getElementById("task-priority").value;
 
   if (text.trim() === "") return;
-m
+
   tasks.push({ text, date, time, priority, completed: false, notes: "" });
   document.getElementById("task-text").value = "";
   renderTasks();

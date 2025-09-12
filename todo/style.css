@@ -12,6 +12,9 @@ body.dark {
   color: #f5f5f5;
 }
 
+#add-task{
+  cursor: pointer;
+}
 body.light {
   background: #f5f5f5;
   color: #121212;
@@ -27,6 +30,21 @@ header {
 }
 
 #theme-toggle {
+
+  border-radius: 50%;
+  background: transparent;
+  size: 150%;
+  cursor: pointer;
+}
+.head
+{
+  font-family: "Pixelify Sans", sans-serif;
+  /* font-style: italic; */
+  font-size: 50px;
+  margin-left: -20px;
+}
+
+#theme-toggle {
   border: none;
   background: transparent;
   font-size: 1.5rem;
@@ -35,7 +53,8 @@ header {
 
 
 .task-input {
-  margin-left: 500px;
+  margin-left:-10px;
+  margin-top: 25px;
   display: flex;
   gap: 0.5rem;
   padding: 1rem;
